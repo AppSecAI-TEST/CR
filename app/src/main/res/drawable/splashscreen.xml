@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape
+            android:shape="rectangle">
+            <solid
+                android:color="@color/white" />
+            <size
+                android:height="600dp"
+                android:width="400dp"/>
+        </shape>
+    </item>
+    <item>
+        <bitmap android:src="@drawable/constructionreportersplashscreen"
+            android:gravity="center"
+            />
+    </item>
+
+</layer-list>

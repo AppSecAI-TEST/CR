@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/settings_gray"
+    android:padding="@dimen/dp10"
+    android:layout_width="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingTop="@dimen/dp10"
+        android:paddingBottom="@dimen/dp10"
+        android:layout_marginBottom="@dimen/dp5">
+        <com.ilaquidain.constructionreporter.object.SquareImageView
+            android:id="@+id/ProjectLogo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="fitCenter"
+            android:layout_centerVertical="true"
+            android:background="@color/white"
+            android:layout_marginStart="@dimen/dp10"/>
+        <TextView
+            android:id="@+id/projectname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/ProjectLogo"
+            android:layout_marginStart="@dimen/dp10"
+            android:layout_marginEnd="@dimen/dp10"
+            style="@style/textstyle_C"
+            tools:text="Project 1"/>
+        <TextView
+            android:id="@+id/projectrefno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/projectname"
+            android:layout_toEndOf="@id/ProjectLogo"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_marginStart="@dimen/dp10"
+            android:layout_marginEnd="@dimen/dp10"
+            style="@style/textstyle_B"
+            tools:text="Project No. 0001A"/>
+        <TextView
+            android:id="@+id/projectaddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/projectrefno"
+            android:layout_toEndOf="@id/ProjectLogo"
+            android:layout_marginStart="@dimen/dp10"
+            android:layout_marginEnd="@dimen/dp10"
+            style="@style/textstyle_B"
+            tools:text="ABC Street, Long Beach, 98002, CA"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/OptionA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/TextOptionA"
+                style="@style/textstyle_A"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp10"
+                android:text="@string/MainMenu_A" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/TextOptionA"
+                android:background="@color/settings_gray"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/OptionB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/TextOptionB"
+                style="@style/textstyle_A"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp10"
+                android:text="@string/MainMenu_B" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/TextOptionB"
+                android:background="@color/settings_gray"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/RelLay_ViewPDFs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/TextOptionD"
+                style="@style/textstyle_A"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/MainMenu_D" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/TextOptionD"
+                android:background="@color/settings_gray"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
+

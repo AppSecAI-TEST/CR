@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/settings_gray"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/dp10">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/textstyle_C_white"
+            android:text="@string/settings"
+            android:textStyle="bold"
+            android:textSize="25sp"/>
+        <ImageButton
+            android:id="@+id/btn_accept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_save_black_24dp"
+            android:background="@drawable/rectangular_button_grey_solid_2"
+            android:padding="@dimen/dp10"
+            android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@color/colorSecondaryDark"
+        android:layout_marginTop="@dimen/dp5"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/settings_gray">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/settings_gray"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/dp5"
+                android:paddingTop="@dimen/dp5">
+                <TextView
+                    android:id="@+id/settingoption1"
+                    style="@style/textstyle_B"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp5"
+                    android:text="@string/ReportOriginatorName"
+                    android:textColor="@color/white" />
+                <EditText
+                    android:id="@+id/settingoption1.1"
+                    style="@style/textstyle_C_white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/settingoption1"
+                    android:background="@color/settings_gray_light"
+                    android:hint="@string/ReportOriginator"
+                    android:padding="@dimen/dp5" />
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/settingoption1.1"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:background="@color/lightgray" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/dp5"
+                android:paddingTop="@dimen/dp5">
+                <TextView
+                    android:id="@+id/settingoption2"
+                    style="@style/textstyle_B"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp5"
+                    android:text="@string/ReportOriginatorPosition"
+                    android:textColor="@color/white" />
+                <EditText
+                    android:id="@+id/settingoption2.1"
+                    style="@style/textstyle_C_white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/settingoption2"
+                    android:background="@color/settings_gray_light"
+                    android:hint="@string/ReportOriginatorPosition"
+                    android:padding="@dimen/dp5" />
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/settingoption2.1"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:background="@color/white" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/dp5"
+                android:paddingTop="@dimen/dp5">
+            <TextView
+                android:id="@+id/settingoption3"
+                style="@style/textstyle_B"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp5"
+                android:text="@string/ReportOriginatorCompany"
+                android:textColor="@color/white" />
+            <EditText
+                android:id="@+id/settingoption3.1"
+                style="@style/textstyle_C_white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/settingoption3"
+                android:background="@color/settings_gray_light"
+                android:hint="@string/ReportOriginatorCompany"
+                android:padding="@dimen/dp5" />
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_below="@id/settingoption3.1"
+                android:layout_marginTop="@dimen/dp5"
+                android:background="@color/white" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/dp5"
+                android:paddingTop="@dimen/dp5">
+                <TextView
+                    android:id="@+id/settingoption4"
+                    style="@style/textstyle_B"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/dp5"
+                    android:text="@string/ReportOriginatorSignature"
+                    android:textColor="@color/white" />
+                <ImageButton
+                    android:id="@+id/editsignature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="@dimen/dp10"
+                    android:layout_marginEnd="@dimen/dp10"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:background="@drawable/rectangular_button_grey_solid_2"
+                    android:padding="@dimen/dp10"
+                    android:src="@drawable/ic_mode_edit_black_24dp" />
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/editsignature"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:background="@color/white" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/dp5"
+                android:paddingTop="@dimen/dp5">
+                <TextView
+                    android:id="@+id/settingoption9"
+                    style="@style/textstyle_B"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/dp5"
+                    android:text="@string/CompanyLogo"
+                    android:textColor="@color/white" />
+                <ImageButton
+                    android:id="@+id/editcompanylogo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="@dimen/dp10"
+                    android:layout_marginEnd="@dimen/dp10"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:background="@drawable/rectangular_button_grey_solid_2"
+                    android:padding="@dimen/dp10"
+                    android:src="@drawable/ic_mode_edit_black_24dp" />
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/editcompanylogo"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:background="@color/white" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/dp5"
+                android:paddingTop="@dimen/dp5">
+                <TextView
+                    android:id="@+id/settingoption5"
+                    style="@style/textstyle_B"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/dp5"
+                    android:text="@string/IncludeManpowerInReport"
+                    android:textColor="@color/white" />
+                <Switch
+                    android:id="@+id/switch1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/dp10"
+                    android:checked="true"
+                    android:switchMinWidth="50dp"
+                    android:thumb="@drawable/switch_thumb_selector"
+                    android:track="@drawable/switch_track_selector" />
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/settingoption5"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:background="@color/white" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/dp5"
+                android:paddingTop="@dimen/dp5">
+                <TextView
+                    android:id="@+id/settingoption6"
+                    style="@style/textstyle_B"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/dp5"
+                    android:text="@string/IncludeEquipmentInReport"
+                    android:textColor="@color/white" />
+                <Switch
+                    android:id="@+id/switch2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/dp10"
+                    android:checked="true"
+                    android:switchMinWidth="50dp"
+                    android:thumb="@drawable/switch_thumb_selector"
+                    android:track="@drawable/switch_track_selector" />
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/settingoption6"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:background="@color/white" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/dp5"
+                android:paddingTop="@dimen/dp5">
+                <TextView
+                    android:id="@+id/settingoption7"
+                    style="@style/textstyle_B"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/dp5"
+                    android:text="@string/IncludePhotosInReport"
+                    android:textColor="@color/white" />
+                <Switch
+                    android:id="@+id/switch3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/dp10"
+                    android:checked="true"
+                    android:switchMinWidth="50dp"
+                    android:thumb="@drawable/switch_thumb_selector"
+                    android:track="@drawable/switch_track_selector" />
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/settingoption7"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:background="@color/white" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/dp5"
+                android:paddingTop="@dimen/dp5">
+                <TextView
+                    android:id="@+id/settingoption8"
+                    style="@style/textstyle_B"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/dp5"
+                    android:text="@string/QualityOfPhotos"
+                    android:textColor="@color/white" />
+
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/photoqualityspinner"
+                    style="@style/myspinnerstyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="@dimen/dp10"
+                    android:layout_marginEnd="@dimen/dp10"
+                    android:background="@color/lightgray"
+                    android:entries="@array/photoquality"
+                    android:padding="@dimen/dp5"></android.support.v7.widget.AppCompatSpinner>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/photoqualityspinner"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:background="@color/white" />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

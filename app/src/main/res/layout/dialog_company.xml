@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="400dp"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+    <TextView
+        android:id="@+id/signature_title"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/signature_button"
+        android:text="@string/CompanyLogo"
+        android:textColor="@android:color/white"
+        style="@style/textstyle_A"
+        android:padding="5dp"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+    <RelativeLayout
+        android:id="@+id/linearLayout"
+        android:layout_above="@+id/linearLayout2"
+        android:layout_below="@id/signature_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:orientation="vertical" >
+        <com.ilaquidain.constructionreporter.object.RectangularImageView
+            android:layout_width="match_parent"
+            android:layout_marginStart="@dimen/dp10"
+            android:layout_marginEnd="@dimen/dp10"
+            android:id="@+id/companylogo_view"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:background="@color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_alignParentBottom="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4"
+        android:background="@android:color/white">
+
+        <Button
+            android:id="@+id/companylogo_cancel"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="@string/cancel"
+            tools:ignore="ButtonStyle"
+            android:textColor="@android:color/white"
+            android:background="@drawable/signature_button" />
+        <Button
+            android:id="@+id/companylogo_select"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="@string/select"
+            tools:ignore="ButtonStyle"
+            android:textColor="@android:color/white"
+            android:background="@drawable/signature_button" />
+        <Button
+            android:id="@+id/companylogo_clear"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="@string/clear"
+            tools:ignore="ButtonStyle"
+            android:textColor="@android:color/white"
+            android:background="@drawable/signature_button" />
+        <Button
+            android:id="@+id/companylogo_accept"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="@string/accept"
+            tools:ignore="ButtonStyle"
+            android:textColor="@android:color/white"
+            android:background="@drawable/signature_button" />
+
+    </LinearLayout>
+</RelativeLayout>
